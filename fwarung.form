@@ -118,9 +118,9 @@
                   <Component id="txtSate" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="chkEsJeruk" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="txtEsJeruk" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="chkEsJeruk" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -272,18 +272,27 @@
             <Property name="text" type="java.lang.String" value="Cash"/>
             <Property name="actionCommand" type="java.lang.String" value="Uang Cash"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rdoCashActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="rdoBCA">
           <Properties>
             <Property name="text" type="java.lang.String" value="BCA Card"/>
             <Property name="actionCommand" type="java.lang.String" value="Kartu Debit BCA"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rdoBCAActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="rdoMandiri">
           <Properties>
             <Property name="text" type="java.lang.String" value="Mandiri Card"/>
             <Property name="actionCommand" type="java.lang.String" value="Kartu Kredit Mandiri"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rdoMandiriActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
@@ -303,6 +312,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblTotal">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="12" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Rp. 0"/>
       </Properties>
     </Component>
